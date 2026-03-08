@@ -1,0 +1,10 @@
+{
+  "name": "multi-llm-summarization-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Streaming backend for a multi-model response summarization demo",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  }
+}

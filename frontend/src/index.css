@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply m-0 bg-ink text-slate-100 antialiased;
+    font-family: "Segoe UI Variable Text", "Trebuchet MS", sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  button,
+  input,
+  textarea {
+    font: inherit;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply rounded-3xl border border-line/90 bg-panel/85 shadow-panel backdrop-blur-xl;
+  }
+
+  .soft-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: #29425f transparent;
+  }
+
+  .soft-scroll::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  .soft-scroll::-webkit-scrollbar-thumb {
+    background: #29425f;
+    border-radius: 999px;
+  }
+
+  .soft-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
